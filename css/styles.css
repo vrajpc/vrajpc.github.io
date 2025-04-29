@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  header {
+    background: white;
+    color: #1976D2;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.5px;
+    color: #1976D2;
+  }
+  
+  nav {
+    margin: auto;
+  }
+  
+  .nav-list {
+    font-family: 'DM Serif Display', serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #1976D2;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-list li a:hover,
+  .nav-list li a:focus{
+    background: #e3f2fd;
+    color: #1976D2;
+    outline: 2px solid #1976D2;
+    border-radius: 4px;
+  }
+  
+  .split-body {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .image-half {
+    min-height: 250px;
+    background: url(../images/cookbook.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background: rgba(255, 255, 255, 0.584);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    max-width: fit-content;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  .form-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem 1rem;
+  }
+  
+  .contact-form {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    color: #1976D2;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #c1c0c0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: black;
+    background: white;
+  }
+  
+  .contact-form button {
+    width: 105%;
+    background: #1976D2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .contact-form button:hover,
+  .contact-form button:focus {
+    background: #125ea2;
+    outline: 2px solid #1976D2;
+  }
+  
+  footer {
+    background: #345573;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-center {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .site-logo-footer {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: -8px;
+  }
+
+  @media (min-width: 1200px) {
+    header h1 {
+      font-size: 2rem;
+      margin: 0 0 0.5rem;
+    }
+    
+    .nav-list {
+      gap: 1.5rem;
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .split-body {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .image-half{
+      flex: 0 0 90%;
+    }
+
+    .form-half {
+      flex: 0 0 40%;
+    }
+
+    main {
+        flex: 1 0 auto;
+        padding: 1rem 0.2rem;
+        max-width: 100%;
+        margin: auto;
+        gap: 1.5rem;
+      }
+  }
+
+.plans-section {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .plans-title {
+    color: #1976D2;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .plans-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .simple-plan, .premium-plan, .uber-premium-plan {
+    background: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .plan-price {
+    color: #1976D2;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  .plan-price span {
+    font-size: 1rem;
+    color: black;
+    margin-left: 0.2rem;
+  }
+  
+  .plan-features {
+    list-style: disc;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    color: black;
+  }
+  
+  .plan-features li {
+    font-size: 1.1rem;
+  }
+  
+  .plan-btn {
+    background: #1976D2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .plan-btn:hover,
+  .plan-btn:focus {
+    background: #125ea2;
+    outline: 2px solid #1976D2;
+  }
+  
+  @media (min-width: 1200px) {
+    .plans-container {
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .simple-plan, .premium-plan, .uber-premium-plan{
+        flex: 1 1 0%;
+    }
+  }
+
+  .about-main{
+    background: url(/images/pizza.jpg) center/cover no-repeat;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .about-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-overlay {
+    background: rgba(255, 255, 255, 0.584);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    max-width: 70%;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    }
+  
+  .about-overlay h2 {
+    color: #1976D2;
+    font-size: 3rem;
+  }
+  
+  .about-overlay p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+  }
+  
+  @media (min-width: 800px) {
+    .about-content {
+      min-height: 500px;
+    }
+    
+  }
